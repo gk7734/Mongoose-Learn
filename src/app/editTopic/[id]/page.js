@@ -2,7 +2,7 @@ import EditTopicForm from "@/app/components/EditTopicForm";
 
 const getTopicById = async (id) => {
     try {
-        const res = await fetch(`http://localhost:3000/api/topics/${id}`, {
+        const res = await fetch(`https://mongoose-learn.vercel.app/api/topics/${id}`, {
             cache: "no-store"
         });
         if (!res.ok) {

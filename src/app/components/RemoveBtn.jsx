@@ -9,7 +9,7 @@ export default function RemoveBtn({ id }) {
         const confirmed = confirm("Are you sure you want to remove?")
 
         if (confirmed) {
-            const res = await fetch(`http://localhost:3000/api/topics?id=${id}`, {
+            const res = await fetch(`https://mongoose-learn.vercel.app/api/topics?id=${id}`, {
                 method: 'DELETE'
             })
             if (res.ok) {
